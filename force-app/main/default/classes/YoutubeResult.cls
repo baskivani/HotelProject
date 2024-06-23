@@ -3,7 +3,7 @@ public with sharing class YoutubeResult {
     //public static final String API_Key = 'AIzaSyBDMZeHT1zBOlxgB8JW7tqwYr2BIsRQz6A';
     public static final String Endpoint = 'https://www.googleapis.com/youtube/v3/search?part=snippet%20&maxResults=20&type=video&q=Baran%20Zeylan&key=AIzaSyBDMZeHT1zBOlxgB8JW7tqwYr2BIsRQz6A';
 
-    
+    @AuraEnabled
     public static list<lwcWrapper> getVideos(){
         
         Http http = new Http();
